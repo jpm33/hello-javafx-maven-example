@@ -24,7 +24,8 @@
             <plugin>
                 <groupId>com.zenjava</groupId>
                 <artifactId>javafx-maven-plugin</artifactId>
-                <version>1.2</version>
+                <!-- <version>1.2</version> -->
+                <version>8.8.3</version>
                 <configuration>
 
                     <!-- executable JAR file is built by default (not optional at this stage) -->
@@ -38,10 +39,10 @@
                         to create keystore use command line:
                             keytool -genkey -alias example-user -keystore keystore.jks
                     -->
-                    <signJar>
+                    <!-- <signJar>
                         <alias>example-user</alias>
                         <storePassword>example-password</storePassword>
-                    </signJar>
+                    </signJar> -->
 
                     <!-- optionally build webstart bundle -->
                     <webstart>
@@ -52,6 +53,15 @@
                     <nativeInstallers/>
 
                 </configuration>
+
+                <!-- <dependencies>
+                    <dependency>
+                        <groupId>org.twdata.maven</groupId>
+                        <artifactId>mojo-executor</artifactId>
+                        <version>2.1.0</version>
+                    </dependency>
+                </dependencies> -->
+
             </plugin>
 
         </plugins>
@@ -67,6 +77,14 @@
             <artifactId>miglayout-javafx</artifactId>
             <version>4.2</version>
         </dependency>
+
+        <!-- JavaFX -->
+        <!-- https://mvnrepository.com/artifact/org.rapidpm.modul/javafx-dialog -->
+        <!-- <dependency>
+            <groupId>org.rapidpm.modul</groupId>
+            <artifactId>javafx-dialog</artifactId>
+            <version>1.2</version>
+        </dependency> -->
 
         <!-- Apache Commons -->
 
