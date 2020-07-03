@@ -20,7 +20,7 @@
 }
 
 .text-field:hover {
-    -fx-border: 1px solid red;
+    -fx-border-color: #ff0000;
 }
 
 /* Component specific styles */
